@@ -1,0 +1,245 @@
+.fondo {
+  padding: 20px 0;
+  background-image: url(images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  background-color: hsl(225, 100%, 94%);
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.tarjeta {
+  font-family: "Red Hat Display", sans-serif;
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  line-height: 22.5px;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 375px;
+  background-color: #fefefe;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 15px 30px hsla(224, 23%, 55%, 40%);
+  box-shadow: 0 15px 30px hsla(224, 23%, 55%, 40%);
+}
+
+.header {
+  background-image: url(images/illustration-hero.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 375px;
+  height: 200px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.contenedor-informacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 20px 45px;
+}
+
+.titulo {
+  margin: 15px 0;
+  font-size: 24px;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.parrafo {
+  margin: 10px 0;
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
+
+.contenedor-datos {
+  background-color: hsl(225, 100%, 98%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.contenedor-musica {
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.datos {
+  padding: 0 40px 0 20px;
+}
+
+.descripcion {
+  padding: 1.5px 0;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.precio {
+  padding: 1.5px 0;
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
+
+.contenedor-etiqueta {
+  padding: 5px;
+}
+
+.etiqueta {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+}
+
+.etiqueta:hover {
+  text-decoration: none;
+  color: hsla(245, 75%, 52%, 60%);
+}
+
+.contenedor-botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.boton-uno {
+  all: unset;
+  background-color: hsl(245, 75%, 52%);
+  -webkit-box-shadow: 0 15px 30px hsla(224, 23%, 55%, 40%);
+  box-shadow: 0 15px 30px hsla(224, 23%, 55%, 40%);
+  color: #fefefe;
+  padding: 15px 75px;
+  border-radius: 10px;
+  margin: 30px 0 0;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.boton-uno:hover {
+  background-color: hsla(245, 75%, 52%, 60%);
+}
+
+.boton-dos {
+  all: unset;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  margin: 20px 0 30px;
+  cursor: pointer;
+}
+
+.boton-dos:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media (min-width: 1024px) {
+  .fondo {
+    background-image: url(images/pattern-background-desktop.svg);
+  }
+}
+
+@media (max-width: 420px) {
+  .tarjeta {
+    width: 90%;
+  }
+
+  .header {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .contenedor-datos {
+    width: 230.42px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .datos {
+    padding: 0 20px;
+  }
+
+  .boton-uno {
+    padding: 15px 37.5px;
+  }
+}
+
+@media (max-width: 350px) {
+  .contenedor-informacion {
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 280px) {
+  .contenedor-datos {
+    width: 210.42px;
+  }
+
+  .boton-uno {
+    padding: 15px 27.5px;
+  }
+}
