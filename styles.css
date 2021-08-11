@@ -44,7 +44,7 @@
   box-shadow: 0 15px 30px hsla(224, 23%, 55%, 40%);
 }
 
-.header {
+.contenedor-encabezado {
   background-image: url(images/illustration-hero.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -207,7 +207,7 @@
     width: 90%;
   }
 
-  .header {
+  .contenedor-encabezado {
     width: 100%;
   }
 }
